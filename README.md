@@ -37,7 +37,7 @@ GET http://localhost:8080/tenant/100 <br />
 GET http://localhost:8080/tenant/100 <br />
 GET http://localhost:8080/tenant/100 <br />
 GET http://localhost:8080/tenant/100 <br />
-
+<br />
 <b>Response:</b><br />
 Request allowed for the tenant:100 <br />
 Request allowed for the tenant:100 <br />
@@ -48,4 +48,7 @@ Too many requests for the Tenant:100 Retry after:11(s) <br />
 Request allowed for the tenant:100 <br />
 
 <h2>Snapshots:</h2>
+
+![snap1](https://user-images.githubusercontent.com/28047472/128707476-00794b9c-48bc-4fe7-b005-709de832e8f5.png)
+![image](https://user-images.githubusercontent.com/28047472/128707515-76630dfc-84e8-41b8-8dbf-19fabfb972fd.png)
 
