@@ -21,7 +21,14 @@ Eg: By default we have configured  <br />
 <b>app_properties_threshold</b> = 100  <br />
 <b>app_properties_duration</b> = 30000 ms (1hr) <br />
 
-So as per default implementation 100 request are allowed in 1hr. If it makes more than 100 requests then Error Code 429 is sent for TOO MANY REQUESTS. It it makes within 100 requests then STATUS=OK is sent. Once it completes one hour then it can again make 100 requests in the next hour.  <br />
+So as per default implementation 100 request are allowed in 1hr. Therefore: <br />
+<br />
+Lets say if no of req (X) is > 100 then, <br />
+i.e http status returned as </t> <b>HttpStatus.TOO_MANY_REQUESTS (code: 429)</b> <br />
+else <br />
+http status returned as </t> <b>HttpStatus.OK (code: 200)</b> <br />
+<br />
+After an hour same tenant can again make 100 requests in the next hour. <br />
 
 <h2>Sample Testcase:</h2>  <br />
 Executed with the following configuration: <br />
